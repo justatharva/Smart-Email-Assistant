@@ -1,0 +1,103 @@
+/* =========================================
+   AI Email Assistant - Gmail Extension
+   ========================================= */
+
+.ai-reply-button {
+    /* Layout */
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 7px !important;
+
+    /* Size */
+    min-width: 105px !important;
+    height: 36px !important;
+    padding: 0 14px !important;
+
+    /* Typography */
+    font-family: "Google Sans", Roboto, Arial, sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    line-height: 36px !important;
+    letter-spacing: 0.1px !important;
+    text-align: center !important;
+
+    /* Appearance */
+    color: #ffffff !important;
+    background: linear-gradient(135deg, #6c63ff, #4f46e5) !important;
+
+    border: none !important;
+    border-radius: 18px !important;
+
+    /* Interaction */
+    cursor: pointer !important;
+    user-select: none !important;
+
+    /* Shadow */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.20) !important;
+
+    /* Animation */
+    transition:
+        background 0.2s ease,
+        box-shadow 0.2s ease,
+        transform 0.15s ease !important;
+
+    /* Prevent Gmail's default styles */
+    outline: none !important;
+    text-decoration: none !important;
+    vertical-align: middle !important;
+}
+
+
+/* Hover */
+
+.ai-reply-button:hover {
+    background: linear-gradient(135deg, #5b52e8, #4338ca) !important;
+
+    box-shadow:
+        0 3px 8px rgba(79, 70, 229, 0.35) !important;
+
+    transform: translateY(-1px) !important;
+}
+
+
+/* Click */
+
+.ai-reply-button:active {
+    transform: translateY(0) !important;
+
+    box-shadow:
+        0 1px 3px rgba(0, 0, 0, 0.20) !important;
+}
+
+
+/* Disabled / Generating */
+
+.ai-reply-button:disabled {
+    opacity: 0.7 !important;
+    cursor: wait !important;
+    transform: none !important;
+
+    background: #9ca3af !important;
+
+    box-shadow: none !important;
+}
+
+
+/* Small AI icon */
+
+.ai-reply-button::before {
+    content: "✦" !important;
+
+    font-size: 16px !important;
+    font-weight: 700 !important;
+
+    line-height: 1 !important;
+}
+
+
+/* Remove Gmail pseudo elements if any */
+
+.ai-reply-button::after {
+    display: none !important;
+}

@@ -1,0 +1,581 @@
+/* =========================================
+   GLOBAL
+   ========================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family:
+    "Inter",
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+
+/* =========================================
+   APP
+   ========================================= */
+
+.app {
+  min-height: 100vh;
+
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(99, 102, 241, 0.10),
+      transparent 35%
+    ),
+    #f5f7fb;
+
+  color: #1f2937;
+
+  transition:
+    background 0.35s ease,
+    color 0.35s ease;
+}
+
+
+/* =========================================
+   DARK MODE
+   ========================================= */
+
+.app.dark-mode {
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(99, 102, 241, 0.16),
+      transparent 35%
+    ),
+    #0f172a;
+
+  color: #e5e7eb;
+}
+
+
+/* =========================================
+   THEME BUTTON
+   ========================================= */
+
+.theme-toggle-container {
+  position: absolute;
+
+  top: 20px;
+  right: 25px;
+
+  z-index: 100;
+}
+
+.theme-toggle {
+  min-width: 125px !important;
+
+  height: 40px !important;
+
+  border-radius: 20px !important;
+
+  padding: 0 16px !important;
+
+  text-transform: none !important;
+
+  font-size: 13px !important;
+
+  font-weight: 600 !important;
+
+  color: #374151 !important;
+
+  background: rgba(255, 255, 255, 0.9) !important;
+
+  border: 1px solid #e5e7eb !important;
+
+  box-shadow:
+    0 3px 10px rgba(15, 23, 42, 0.08) !important;
+
+  transition:
+    all 0.25s ease !important;
+}
+
+.theme-toggle:hover {
+  background: #eef2ff !important;
+
+  color: #4f46e5 !important;
+
+  transform: translateY(-1px);
+}
+
+
+/* Dark theme button */
+
+.dark-mode .theme-toggle {
+  color: #e5e7eb !important;
+
+  background: #1e293b !important;
+
+  border-color: #334155 !important;
+
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.25) !important;
+}
+
+.dark-mode .theme-toggle:hover {
+  background: #273449 !important;
+
+  color: #a5b4fc !important;
+}
+
+
+/* =========================================
+   MAIN CONTAINER
+   ========================================= */
+
+.email-app-container {
+  padding-top: 70px;
+  padding-bottom: 60px;
+}
+
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+.email-header {
+  text-align: center;
+
+  margin-bottom: 35px;
+}
+
+.email-header h1 {
+  font-size: 38px;
+
+  font-weight: 700;
+
+  letter-spacing: -0.8px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #4f46e5,
+      #7c3aed
+    );
+
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
+
+.email-header p {
+  margin-top: 8px;
+
+  color: #6b7280;
+
+  font-size: 15px;
+}
+
+.dark-mode .email-header p {
+  color: #94a3b8;
+}
+
+
+/* =========================================
+   MAIN CARD
+   ========================================= */
+
+.email-card {
+  background: rgba(255, 255, 255, 0.96);
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 18px;
+
+  padding: 30px;
+
+  box-shadow:
+    0 10px 30px rgba(15, 23, 42, 0.08),
+    0 2px 8px rgba(15, 23, 42, 0.04);
+
+  transition:
+    background 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+
+/* Dark card */
+
+.dark-mode .email-card {
+  background: #1e293b;
+
+  border-color: #334155;
+
+  box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.30);
+}
+
+
+/* =========================================
+   MATERIAL UI TEXT FIELDS
+   ========================================= */
+
+.MuiTextField-root {
+  background: #ffffff;
+
+  border-radius: 10px;
+}
+
+.dark-mode .MuiTextField-root {
+  background: #172033;
+}
+
+
+/* Text */
+
+.dark-mode .MuiInputBase-input {
+  color: #e5e7eb !important;
+}
+
+
+/* Labels */
+
+.dark-mode .MuiInputLabel-root {
+  color: #94a3b8 !important;
+}
+
+.dark-mode .MuiInputLabel-root.Mui-focused {
+  color: #a5b4fc !important;
+}
+
+
+/* Borders */
+
+.dark-mode
+.MuiOutlinedInput-root
+fieldset {
+  border-color: #475569 !important;
+}
+
+.dark-mode
+.MuiOutlinedInput-root:hover
+fieldset {
+  border-color: #64748b !important;
+}
+
+.dark-mode
+.MuiOutlinedInput-root.Mui-focused
+fieldset {
+  border-color: #818cf8 !important;
+
+  border-width: 2px !important;
+}
+
+
+/* =========================================
+   SELECT
+   ========================================= */
+
+.dark-mode .MuiFormControl-root {
+  background: #172033;
+
+  border-radius: 10px;
+}
+
+.dark-mode .MuiSelect-select {
+  color: #e5e7eb !important;
+}
+
+.dark-mode .MuiSelect-icon {
+  color: #94a3b8 !important;
+}
+
+
+/* Dropdown menu */
+
+.dark-mode .MuiPaper-root {
+  background: #1e293b !important;
+
+  color: #e5e7eb !important;
+}
+
+.dark-mode .MuiMenuItem-root:hover {
+  background: #334155 !important;
+}
+
+
+/* =========================================
+   GENERATE BUTTON
+   ========================================= */
+
+.generate-button {
+  height: 48px !important;
+
+  border-radius: 10px !important;
+
+  font-size: 15px !important;
+
+  font-weight: 600 !important;
+
+  text-transform: none !important;
+
+  background:
+    linear-gradient(
+      135deg,
+      #4f46e5,
+      #6366f1
+    ) !important;
+
+  box-shadow:
+    0 5px 15px
+    rgba(79, 70, 229, 0.25) !important;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease !important;
+}
+
+.generate-button:hover {
+  background:
+    linear-gradient(
+      135deg,
+      #4338ca,
+      #4f46e5
+    ) !important;
+
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 8px 20px
+    rgba(79, 70, 229, 0.35) !important;
+}
+
+.generate-button:disabled {
+  background: #64748b !important;
+
+  box-shadow: none !important;
+
+  transform: none !important;
+}
+
+
+/* =========================================
+   GENERATED REPLY
+   ========================================= */
+
+.generated-section {
+  margin-top: 28px;
+
+  padding: 25px;
+
+  background: #ffffff;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 14px;
+
+  box-shadow:
+    0 5px 18px rgba(15, 23, 42, 0.05);
+
+  transition:
+    background 0.35s ease,
+    border-color 0.35s ease;
+}
+
+
+/* Dark generated section */
+
+.dark-mode .generated-section {
+  background: #1e293b;
+
+  border-color: #334155;
+
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.20);
+}
+
+
+/* =========================================
+   GENERATED TITLE
+   ========================================= */
+
+.generated-title {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin-bottom: 15px;
+
+  color: #111827;
+
+  font-size: 18px;
+
+  font-weight: 600;
+}
+
+.dark-mode .generated-title {
+  color: #f1f5f9;
+}
+
+
+/* =========================================
+   AI BADGE
+   ========================================= */
+
+.ai-badge {
+  display: inline-flex;
+
+  align-items: center;
+
+  padding: 4px 9px;
+
+  border-radius: 20px;
+
+  font-size: 11px;
+
+  font-weight: 600;
+
+  color: #4f46e5;
+
+  background: #eef2ff;
+}
+
+.dark-mode .ai-badge {
+  color: #c7d2fe;
+
+  background: #312e81;
+}
+
+
+/* =========================================
+   COPY BUTTON
+   ========================================= */
+
+.copy-button {
+  margin-top: 14px !important;
+
+  border-radius: 9px !important;
+
+  text-transform: none !important;
+
+  font-weight: 600 !important;
+
+  border-color: #6366f1 !important;
+
+  color: #4f46e5 !important;
+}
+
+.copy-button:hover {
+  background: #eef2ff !important;
+}
+
+.dark-mode .copy-button {
+  border-color: #818cf8 !important;
+
+  color: #a5b4fc !important;
+}
+
+.dark-mode .copy-button:hover {
+  background: #312e81 !important;
+}
+
+
+/* =========================================
+   ERROR
+   ========================================= */
+
+.error-message {
+  margin-top: 15px;
+
+  padding: 12px 15px;
+
+  border-radius: 9px;
+
+  color: #b91c1c;
+
+  background: #fef2f2;
+
+  border: 1px solid #fecaca;
+
+  font-size: 14px;
+}
+
+.dark-mode .error-message {
+  color: #fca5a5;
+
+  background: #450a0a;
+
+  border-color: #7f1d1d;
+}
+
+
+/* =========================================
+   LOADING
+   ========================================= */
+
+.MuiCircularProgress-root {
+  color: #ffffff !important;
+}
+
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+
+@media (max-width: 768px) {
+
+  .theme-toggle-container {
+    top: 12px;
+    right: 12px;
+  }
+
+  .theme-toggle {
+    min-width: auto !important;
+
+    padding: 0 12px !important;
+  }
+
+  .email-app-container {
+    padding-top: 75px;
+
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .email-header h1 {
+    font-size: 30px;
+  }
+
+  .email-card {
+    padding: 20px;
+  }
+
+  .generated-section {
+    padding: 18px;
+  }
+}
+
+
+@media (max-width: 480px) {
+
+  .email-header h1 {
+    font-size: 26px;
+  }
+
+  .email-header p {
+    font-size: 14px;
+  }
+
+  .email-card {
+    padding: 15px;
+  }
+
+  .theme-toggle {
+    font-size: 12px !important;
+  }
+}
