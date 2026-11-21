@@ -124,7 +124,7 @@ smart-email-assistant/
 
 1. Navigate to the backend directory:
    ```bash
-   cd email-writer-backend
+   cd email-writer-sb
    ```
 
 2. Configure your Groq API key. Open `src/main/resources/application.properties` and ensure it reads from environment variables (or add your key locally without committing it):
