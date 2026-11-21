@@ -76,8 +76,6 @@ An AI-powered, full-stack email reply generator built with **Java Spring Boot**,
 
 ## 📸 Screenshots
 
-> *Note: Create a `screenshots/` folder in the root directory and add your PNG/GIF captures using the filenames below.*
-
 | Gmail Extension Integration | Web Application Interface |
 | :---: | :---: |
 | ![Gmail AI Reply Button](screenshots/Extension_Load.png) | ![React Web App UI](screenshots/Light_Mode.png) |
