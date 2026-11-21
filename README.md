@@ -80,8 +80,8 @@ An AI-powered, full-stack email reply generator built with **Java Spring Boot**,
 
 | Gmail Extension Integration | Web Application Interface |
 | :---: | :---: |
-| ![Gmail AI Reply Button](screenshots/Entension_Load.png) | ![React Web App UI](screenshots/Light_Mode.png) |
-| ![Gmail AI Reply Button](screenshots/Entension_Use.png) | ![React Web App UI](screenshots/Dark_Mode.png) |
+| ![Gmail AI Reply Button](screenshots/Extension_Load.png) | ![React Web App UI](screenshots/Light_Mode.png) |
+| ![Gmail AI Reply Button](screenshots/Extension_Use.png) | ![React Web App UI](screenshots/Dark_Mode.png) |
 | *One-click AI Reply button injected directly into Gmail's compose bar* | *Standalone React & Material UI interface with tone selection* |
 
 ---
