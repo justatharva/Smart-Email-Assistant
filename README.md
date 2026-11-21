@@ -1,4 +1,4 @@
-# ✉️ Smart Email Assistant
+# 📧 Smart Email Assistant
 
 An AI-powered, full-stack email reply generator built with **Java Spring Boot**, **React**, **Groq Cloud API**, and a **Manifest V3 Chrome Extension**. It enables users to generate context-aware, tone-customized email responses either through a standalone web application or directly inside **Gmail** with a single click.
 
