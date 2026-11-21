@@ -1,6 +1,6 @@
 # ✉️ Smart Email Assistant
 
-An AI-powered, full-stack email reply generator built with **Java Spring Boot**, **React**, **Google Gemini API**, and a **Manifest V3 Chrome Extension**. It enables users to generate context-aware, tone-customized email responses either through a standalone web application or directly inside **Gmail** with a single click.
+An AI-powered, full-stack email reply generator built with **Java Spring Boot**, **React**, **Groq Cloud API**, and a **Manifest V3 Chrome Extension**. It enables users to generate context-aware, tone-customized email responses either through a standalone web application or directly inside **Gmail** with a single click.
 
 ---
 
@@ -49,7 +49,7 @@ An AI-powered, full-stack email reply generator built with **Java Spring Boot**,
                                  │ REST / WebClient
                                  ▼
                  ┌───────────────────────────────┐
-                 │      Google Gemini API        │
+                 │         Groq Cloud API        │
                  └───────────────────────────────┘
 ```
 
@@ -60,7 +60,7 @@ An AI-powered, full-stack email reply generator built with **Java Spring Boot**,
 ### **Backend**
 - **Java 17+** & **Spring Boot 3**
 - **Spring Web / WebFlux** (REST API & non-blocking HTTP client)
-- **Google Gemini API** (LLM text generation)
+- **Groq Cloud API** (LLM text generation)
 - **Maven** (Dependency management & build tool)
 
 ### **Frontend**
@@ -118,7 +118,7 @@ smart-email-assistant/
 - **Maven 3.8+**
 - **Node.js 18+** and **npm**
 - **Google Chrome** (or any Chromium-based browser)
-- A **Google Gemini API Key** from [Google AI Studio](https://aistudio.google.com/)
+- A **Groq API Key** from [GroqCloud]([https://console.groq.com/keys])
 
 ---
 
@@ -129,15 +129,15 @@ smart-email-assistant/
    cd email-writer-backend
    ```
 
-2. Configure your Gemini API key. Open `src/main/resources/application.properties` and ensure it reads from environment variables (or add your key locally without committing it):
+2. Configure your Groq API key. Open `src/main/resources/application.properties` and ensure it reads from environment variables (or add your key locally without committing it):
    ```properties
-   gemini.api.url=${GEMINI_API_URL}
-   gemini.api.key=${GEMINI_API_KEY}
+   groq.api.url=${GROQ_API_URL}
+   groq.api.key=${GROQ_API_KEY}
    ```
 
 3. Export your API key in your terminal and run the Spring Boot server:
    ```bash
-   export GEMINI_API_KEY="your_actual_gemini_api_key"
+   export GROQ_API_KEY="your_actual_groq_api_key"
    mvn spring-boot:run
    ```
    The backend server will start on **`http://localhost:8080`**.
